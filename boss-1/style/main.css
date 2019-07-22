@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+}
+
+.home-header {
+  background: url('../images/home-bg.png') no-repeat;
+  background-size: 100%, auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.home-header > img {
+  width: 65%;
+  margin: 2rem;
+}
+
+.home-header form {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2.2rem;
+  border-radius: 2.2rem;
+}
+
+.home-header form input {
+  width: 75%;
+  border: none;
+  color: #aeaeae;
+}
+
+.home-header form button {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  font-weight: lighter;
+  border: none;
+  background-color: #fff;
+}

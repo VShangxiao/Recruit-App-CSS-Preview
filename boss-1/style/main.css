@@ -26,6 +26,10 @@ body {
   border-radius: 2rem;
 }
 
+.grey {
+  color: #9fa3b0;
+}
+
 /* home */
 .home-header {
   background: url('../images/home-bg.png') no-repeat;
@@ -354,4 +358,100 @@ body {
 .user-info .info {
   width: 40%;
   margin: 0 1rem;
+}
+
+.job-detail h3 {
+  color: #333;
+  font-size: 1rem;
+  position: relative;
+}
+
+.job-detail h3:after {
+  content: '';
+  width: 1rem;
+  height: 1px;
+  display: inline-block;
+  background: #62d5c8;
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+}
+
+.job-detail .text {
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+}
+
+.job-detail .tags {
+  padding-top: 0.5rem;
+}
+
+.job-detail .tags sapn {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  border: 1px solid #5bd4c7;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.job-detail .text table {
+  border-spacing: 2px;
+  border: 1px solid #ebceef;
+  padding: 0.7rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.job-detail .text th {
+  font-weight: normal;
+  width: 6rem;
+  color: #ebceef;
+}
+
+.job-detail .text td {
+  width: 8rem;
+}
+
+.company-info {
+  background: #eefbf9;
+}
+
+.company-info > img {
+  height: 3.5rem;
+  border-radius: 3.5rem;
+}
+
+.company-info .info {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.company-info .info .name {
+  color:#333; 
+}
+
+.company-info .info .name .btn {
+  background: #62d5c8;
+  color: #fff;
+}
+
+.company-info .info .desc {
+  font-size: 0.8rem;
+  color: #414a60;
+}
+
+.company-info .info .tags {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  justify-content: flex-start;
+}
+
+.company-info .info .tags i {
+  display: inline-block;
+  width: 1px;
+  height: 0.8rem;
+  background: #ebceef;
+  margin: 0 0.5rem;
 }

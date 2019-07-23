@@ -101,7 +101,7 @@ body {
 
 # 02-dl内容架构设计
 
-index.html
+## index.html
 
 ```
 <!DOCTYPE html>
@@ -263,7 +263,7 @@ body {
 
 ![](C:\Web\Node\ZhiPin_CSS\02-架构.png)
 
-list.html
+## list.html
 
 ```
 <!DOCTYPE html>
@@ -364,7 +364,7 @@ list.html
 
 # 04-list页搭建框架(header完成)
 
-list.html
+## list.html
 
 ```
 <!DOCTYPE html>
@@ -593,5 +593,808 @@ body {
   color: #7e8793;
   flex-shrink: 0;
 }
+```
+
+# 05
+
+## list.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【北京web前端招聘】2019年北京web前端最新人才招聘信息-BOSS直聘</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="list-header flex">
+      <img src="./images/icon-home.png" alt="">
+      <form action="" class="flex">
+        <div class="inner flex">
+          <input type="text" value="web前端">
+          <span>&times;</span>
+        </div>
+        <button>搜索</button>
+      </form>
+    </div>
+
+    <div class="filter flex">
+      <dl class="active">
+        <dt>经验</dt>
+        <dd>
+          <li class="active">不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li >应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <ul class="job-list">
+    <li>
+      <a href="" class="flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>
+```
+
+main.css
+
+```
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+  color: #7e8793;
+  -webkit-font-smoothing: antialiased;
+}
+
+.home-header {
+  background: url('../images/home-bg.png') no-repeat;
+  background-size: 100%, auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.home-header > img {
+  width: 67%;
+  margin: 2.3rem;
+}
+
+.home-header form {
+  background: white;
+  width: 92%;
+  margin: 0 auto;
+  line-height: 2.2rem;
+  border-radius: 2.2rem;
+}
+
+.home-header form input {
+  width: 75%;
+  border: none;
+  color: #aeaeae;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.home-header form button {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  border: none;
+  background-color: #fff;
+}
+
+.home-categories {
+  padding: 0 1rem;
+}
+
+.home-categories dt {
+  display: flex;
+  align-items: center;
+  color: #525252;
+}
+
+.home-categories dt img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.home-categories dd {
+  margin: 0;
+  margin: 0 -0.4rem;
+}
+
+.home-categories dd .tag {
+  background: #f5f8f9;
+  color: #7e8793;
+  font-size: 13px;
+  padding: 0.3rem 1rem;
+  margin: 0 8px 8px 0;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.home-footer {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.home-footer p {
+  margin: 0.2rem 0;
+}
+
+/* list-page */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header {
+  padding: 0.8rem 1rem; 
+}
+
+.list-header img {
+  height: 1.2rem;
+}
+
+
+.list-header form {
+  width: 100%;
+}
+
+.list-header form .inner {
+  width: 100%;
+  background: #f5f8f9;
+  margin: 0 1rem;
+  line-height: 1.7rem;
+  border-radius: 15px;
+  padding: 0 1rem;
+}
+
+.list-header form .inner input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #8b96a6;
+}
+
+.list-header form button {
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #7e8793;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.filter {
+  padding: 0.5rem 1rem;
+  border: 1px solid #f5f8f9;
+
+}
+
+.filter dl, .filter dd {
+  margin: 0;
+}
+
+.filter dt {
+  font-size: 0.8rem;
+}
+
+.filter .active dt {
+  color: #333;
+}
+
+.filter dt:after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #999;
+  border-style: solid none none solid;
+  transform: rotate(225deg);
+  transform-origin: 2px 1px;
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+
+}
+
+.filter .active dt:after {
+  transform: rotate(45deg);
+}
+
+.filter dd {
+  display: none;
+
+}
+
+.filter .active dd {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+.filter .active dd ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+
+}
+
+.filter .active dd li {
+  line-height: 3.5rem;
+  text-indent: 1rem;
+  color: #999;
+}
+
+.filter .active dd li.active {
+  background: #f5f8f9;
+  color: #333;
+}
+```
+
+# 06-list页面基本完成
+
+> ">" 是子选择符,用于匹配那些其他元素的直接后辈
+
+## list.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【北京web前端招聘】2019年北京web前端最新人才招聘信息-BOSS直聘</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="list-header flex">
+      <img src="./images/icon-home.png" alt="">
+      <form action="" class="flex">
+        <div class="inner flex">
+          <input type="text" value="web前端">
+          <span>&times;</span>
+        </div>
+        <button>搜索</button>
+      </form>
+    </div>
+
+    <div class="filter flex">
+      <dl class="active1">
+        <dt>经验</dt>
+        <dd>
+          <ul>
+            <li class="active">不限</li>
+            <li>应届生</li>
+            <li>一年以内</li>
+            <li>1-3年</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <ul>
+            <li class="active">不限</li>
+            <li>应届生</li>
+            <li>一年以内</li>
+            <li>1-3年</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <ul>
+            <li class="active">不限</li>
+            <li>应届生</li>
+            <li>一年以内</li>
+            <li>1-3年</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <ul>
+            <li class="active">不限</li>
+            <li>应届生</li>
+            <li>一年以内</li>
+            <li>1-3年</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <ul>
+            <li class="active">不限</li>
+            <li>应届生</li>
+            <li>一年以内</li>
+            <li>1-3年</li>
+          </ul>
+        </dd>
+      </dl> 
+    </div>
+  </div>
+  <ul class="job-list">
+    <li>
+      <a href="" class="job-item flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title flex">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="job-item flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title flex">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="job-item flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title flex">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="job-item flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title flex">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="job-item flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title flex">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
+```
+
+## main.css
+
+```
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+  color: #7e8793;
+  -webkit-font-smoothing: antialiased;
+}
+
+.home-header {
+  background: url('../images/home-bg.png') no-repeat;
+  background-size: 100%, auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.home-header > img {
+  width: 67%;
+  margin: 2.3rem;
+}
+
+.home-header form {
+  background: white;
+  width: 92%;
+  margin: 0 auto;
+  line-height: 2.2rem;
+  border-radius: 2.2rem;
+}
+
+.home-header form input {
+  width: 75%;
+  border: none;
+  color: #aeaeae;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.home-header form button {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  border: none;
+  background-color: #fff;
+}
+
+.home-categories {
+  padding: 0 1rem;
+}
+
+.home-categories dt {
+  display: flex;
+  align-items: center;
+  color: #525252;
+}
+
+.home-categories dt img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.home-categories dd {
+  margin: 0;
+  margin: 0 -0.4rem;
+}
+
+.home-categories dd .tag {
+  background: #f5f8f9;
+  color: #7e8793;
+  font-size: 13px;
+  padding: 0.3rem 1rem;
+  margin: 0 8px 8px 0;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.home-footer {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.home-footer p {
+  margin: 0.2rem 0;
+}
+
+/* list-page */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header {
+  padding: 0.8rem 1rem; 
+}
+
+.list-header img {
+  height: 1.2rem;
+}
+
+
+.list-header form {
+  width: 100%;
+}
+
+.list-header form .inner {
+  width: 100%;
+  background: #f5f8f9;
+  margin: 0 1rem;
+  line-height: 1.7rem;
+  border-radius: 15px;
+  padding: 0 1rem;
+}
+
+.list-header form .inner input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #8b96a6;
+}
+
+.list-header form button {
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #7e8793;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.filter {
+  padding: 0.5rem 1rem;
+  border: 1px solid #f5f8f9;
+
+}
+
+.filter dl, .filter dd {
+  margin: 0;
+}
+
+.filter dt {
+  font-size: 0.8rem;
+}
+
+.filter .active dt {
+  color: #333;
+}
+
+.filter dt:after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #999;
+  border-style: solid none none solid;
+  transform: rotate(225deg);
+  transform-origin: 2px 1px;
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+
+}
+
+.filter .active dt:after {
+  transform: rotate(45deg);
+}
+
+.filter dd {
+  display: none;
+
+}
+
+.filter .active dd {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+.filter .active dd ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+
+}
+
+.filter .active dd li {
+  line-height: 3.5rem;
+  text-indent: 1rem;
+  color: #999;
+}
+
+.filter .active dd li.active {
+  background: #f5f8f9;
+  color: #333;
+}
+
+.job-list {
+  margin: 0;
+  padding: 0;
+}
+
+.job-item {
+  margin: 1rem;
+  padding-bottom: 1rem;
+  color: #7e8793;
+  text-decoration: none;
+  border-bottom: 1px solid #f5f8f9;
+}
+
+.job-item > img {
+  height: 3.5rem;
+  border-radius: 0.3rem;
+}
+
+.job-item .text {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.job-item .title {
+  font-size: 15px;
+  color: #333;
+}
+
+.job-item .salary{
+  font-size: 16px;
+  color: #fc6c38;
+}
+
+.job-item .company {
+  color: #333;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.job-item .props {
+  font-size: 0.8rem;
+}
+
+.job-item .props span {
+  margin-right: 0.5rem; 
+}
+```
+
+# 07-详情页布局
+
+## detail.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【web前端招聘】_京东集团招聘-BOSS直聘</title>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar flex">
+      <img src="./images/logo.png" alt="">
+      <form action="" class="flex">
+        <input type="text" placeholder="搜索职位">
+        <button class="search-icon"></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="job-info">
+    <div class="title flex">
+      <span>web前端</span>
+      <span class="salary">11-17K·13薪</span>
+    </div>
+    <div class="props">
+      <div>
+        北京 | 1-3年 | 本科
+      </div>
+      <div>
+        更新于：2019年6月6日
+      </div>
+    </div>
+    <div class="tags">
+      <span>HTML/CSS</span>
+      <span>前端开发</span>
+      <span>Javascript</span>
+    </div>
+  </div>
+
+  <div class="user-info flex">
+    <img src="./images/avatar.png" alt="">
+    <div>
+      <div class="name flex">
+        <span>高先生</span>
+        <span>感兴趣</span>
+      </div>
+      <div>
+        京东集团·招聘者
+      </div>
+    </div>
+    <button class="btn">立即沟通</button>
+  </div>
+
+</body>
+</html>
 ```
 

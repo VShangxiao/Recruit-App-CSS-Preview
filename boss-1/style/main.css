@@ -126,3 +126,72 @@ body {
   flex-shrink: 0;
   padding: 0;
 }
+
+.filter {
+  padding: 0.5rem 1rem;
+  border: 1px solid #f5f8f9;
+
+}
+
+.filter dl, .filter dd {
+  margin: 0;
+}
+
+.filter dt {
+  font-size: 0.8rem;
+}
+
+.filter .active dt {
+  color: #333;
+}
+
+.filter dt:after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #999;
+  border-style: solid none none solid;
+  transform: rotate(225deg);
+  transform-origin: 2px 1px;
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+
+}
+
+.filter .active dt:after {
+  transform: rotate(45deg);
+}
+
+.filter dd {
+  display: none;
+
+}
+
+.filter .active dd {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+.filter .active dd ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+
+}
+
+.filter .active dd li {
+  line-height: 3.5rem;
+  text-indent: 1rem;
+  color: #999;
+}
+
+.filter .active dd li.active {
+  background: #f5f8f9;
+  color: #333;
+}

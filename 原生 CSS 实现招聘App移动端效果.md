@@ -1,12 +1,24 @@
+# 原生 CSS 实现招聘App移动端效果
+
+## 01-基础项目结构搭建
+
+> Tips：安装 live server 插件，编辑器内预览效果
+
+## 01版项目架构
+
+![](C:\Web\Node\ZhiPin_CSS\01-架构.png)
+
+### index.html
+
+```
 <!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BOSS直聘 - 互联网招聘神器</title>
+  <title>BOSS直聘</title>
   <link rel="stylesheet" href="./style/main.css">
-  <link rel="shortcut icon" type="./images/favicon.png">
 </head>
 <body>
   <div class="container">
@@ -27,33 +39,11 @@
           <a href="" class="tag">Java</a>
           <a href="" class="tag">PHP</a>
           <a href="" class="tag">Web前端</a>
-          <a href="" class="tag">Go</a>
+          <a href="" class="tag">数据挖掘</a>
           <a href="" class="tag">Python</a>
+          <a href="" class="tag">C++</a>
           <a href="" class="tag">iOS</a>
-        </dd>
-      </dl>
-      <dl>
-        <dt>
-          <img src="./images/product.png" alt="">
-          <div>产品</div>
-        </dt>
-        <dd>
-          <a href="" class="tag">产品运营</a>
-          <a href="" class="tag">产品经理</a>
-          <a href="" class="tag">Web产品经理</a>
-          <a href="" class="tag">数据产品经理</a>
-        </dd>
-      </dl>
-      <dl>
-        <dt>
-          <img src="./images/operate.png" alt="">
-          <div>运营</div>
-        </dt>
-        <dd>
-          <a href="" class="tag">客户运营</a>
-          <a href="" class="tag">电商运营</a>
-          <a href="" class="tag">商家运营</a>
-          <a href="" class="tag">运营总监</a>
+          <a href="" class="tag">Android</a>
         </dd>
       </dl>
     </div>
@@ -64,3 +54,48 @@
   </div>
 </body>
 </html>
+```
+
+### main.css
+
+```
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+}
+
+.home-header {
+  background: url('../images/home-bg.png') no-repeat;
+  background-size: 100%, auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.home-header > img {
+  width: 65%;
+  margin: 2rem;
+}
+
+.home-header form {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2.2rem;
+  border-radius: 2.2rem;
+}
+
+.home-header form input {
+  width: 75%;
+  border: none;
+  color: #aeaeae;
+}
+
+.home-header form button {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  font-weight: lighter;
+  border: none;
+  background-color: #fff;
+}
+```
+

@@ -4,15 +4,15 @@
 
 ## 1-首页效果：
 
-![](C:\Web\Node\ZhiPin_CSS\01首页预览图.png)
+![](C:\Web\Node\ZhiPin_CSS\img\01首页预览图.png)
 
 ## 2-列表页预览
 
-![](C:\Web\Node\ZhiPin_CSS\02列表页预览.png)
+![](C:\Web\Node\ZhiPin_CSS\img\02列表页预览.png)
 
 ## 3-详情页预览
 
-![](C:\Web\Node\ZhiPin_CSS\03详情页预览.gif)
+![](C:\Web\Node\ZhiPin_CSS\img\03详情页预览.gif)
 
 # 项目开始
 
@@ -22,7 +22,7 @@
 
 ## 01版项目架构
 
-![](C:\Web\Node\ZhiPin_CSS\01-架构.png)
+![](C:\Web\Node\ZhiPin_CSS\img\01-架构.png)
 
 ### index.html
 
@@ -277,7 +277,7 @@ body {
 
 # 03-列表页设计
 
-![](C:\Web\Node\ZhiPin_CSS\02-架构.png)
+![](C:\Web\Node\ZhiPin_CSS\img\02-架构.png)
 
 ## list.html
 
@@ -1352,6 +1352,8 @@ body {
 ```
 
 # 07-详情页布局
+
+![](C:\Web\Node\ZhiPin_CSS\img\07-架构.png)
 
 ## detail.html
 

@@ -80,3 +80,48 @@ body {
 .home-footer p {
   margin: 0.2rem 0;
 }
+
+/* list-page */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header {
+  padding: 0.8rem 1rem; 
+}
+
+.list-header img {
+  height: 1.2rem;
+}
+
+
+.list-header form {
+  width: 100%;
+}
+
+.list-header form .inner {
+  width: 100%;
+  background: #f5f8f9;
+  margin: 0 1rem;
+  line-height: 1.7rem;
+  border-radius: 15px;
+  padding: 0 1rem;
+}
+
+.list-header form .inner input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #8b96a6;
+}
+
+.list-header form button {
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #7e8793;
+  flex-shrink: 0;
+}

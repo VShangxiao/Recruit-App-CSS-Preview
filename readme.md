@@ -4,15 +4,15 @@
 
 ## 1-首页效果：
 
-![](C:\Web\Node\ZhiPin_CSS\img\01首页预览图.png)
+![](https://github.com/VShangxiao/Recruit-App-CSS-Preview/blob/master/img/01%E9%A6%96%E9%A1%B5%E9%A2%84%E8%A7%88%E5%9B%BE.png)
 
 ## 2-列表页预览
 
-![](C:\Web\Node\ZhiPin_CSS\img\02列表页预览.png)
+![](https://github.com/VShangxiao/Recruit-App-CSS-Preview/blob/master/img/02-%E6%9E%B6%E6%9E%84.png)
 
 ## 3-详情页预览
 
-![](C:\Web\Node\ZhiPin_CSS\img\03详情页预览.gif)
+![](https://github.com/VShangxiao/Recruit-App-CSS-Preview/blob/master/img/03%E8%AF%A6%E6%83%85%E9%A1%B5%E9%A2%84%E8%A7%88.gif)
 
 # 项目开始
 
@@ -22,7 +22,7 @@
 
 ## 01版项目架构
 
-![](C:\Web\Node\ZhiPin_CSS\img\01-架构.png)
+![](https://github.com/VShangxiao/Recruit-App-CSS-Preview/blob/master/img/01-%E6%9E%B6%E6%9E%84.png)
 
 ### index.html
 
@@ -277,7 +277,7 @@ body {
 
 # 03-列表页设计
 
-![](C:\Web\Node\ZhiPin_CSS\img\02-架构.png)
+![](https://github.com/VShangxiao/Recruit-App-CSS-Preview/blob/master/img/02-%E6%9E%B6%E6%9E%84.png)
 
 ## list.html
 
@@ -1353,7 +1353,7 @@ body {
 
 # 07-详情页布局
 
-![](C:\Web\Node\ZhiPin_CSS\img\07-架构.png)
+![](https://github.com/VShangxiao/Recruit-App-CSS-Preview/blob/master/img/07-%E6%9E%B6%E6%9E%84.png)
 
 ## detail.html
 

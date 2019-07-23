@@ -1398,3 +1398,167 @@ body {
 </html>
 ```
 
+# 08-继续详情页
+
+## detail.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【web前端招聘】_京东集团招聘-BOSS直聘</title>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-bar flex">
+      <img src="./images/logo.png" alt="">
+      <form action="" class="flex">
+        <input type="text" placeholder="搜索职位">
+        <button class="search-icon"></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="job-info">
+    <div class="title flex">
+      <span>web前端</span>
+      <span class="salary">11-17K·13薪</span>
+    </div>
+    <div class="props">
+      <div>
+        北京 | 1-3年 | 本科
+      </div>
+      <div>
+        更新于：2019年6月6日
+      </div>
+    </div>
+    <div class="tags">
+      <span>HTML/CSS</span>
+      <span>前端开发</span>
+      <span>Javascript</span>
+    </div>
+  </div>
+
+  <div class="user-info flex">
+    <img src="./images/avatar.png" alt="">
+    <div>
+      <div class="name flex">
+        <span>高先生</span>
+        <span>感兴趣</span>
+      </div>
+      <div>
+        京东集团·招聘者
+      </div>
+    </div>
+    <button class="btn">立即沟通</button>
+  </div>
+
+  <div class="job-detail">
+    <h3>职位描述</h3>
+    <div class="text">
+      岗位职责：<br>1.本科及以上学历<br>2.精通HTML、JavaScript、Ajax、CSS等Web开发技术
+      <br>3.具有审美和设计能力，注重细节，追求完美,会简单使用photoshop等工具<br>4.能熟练使用主流的JavaScript框架或JavaScript库,熟练运用react/angular/vue中的一种
+      <br>5.能使用grunt/gulp/webpack进行环境构建，了解velocity、jsp、freemarker中的一种
+      <br>6.熟悉echarts、highcharts优先考虑<br>7.实现产品前端ui和交互方面的开发需求，确保不同平台、设备上具有优秀的用户体验；<br>8.对Web标准和兼容性有良好认识，能够高保真还原设计稿，具备良好的代码风格以及接口、架构设计能力<br>9.有良好的沟通能力和团队合作能力，善于沟通，工作自主驱动，具备良好的问题定位分析能力
+    </div>
+
+    <h3>团队介绍</h3>
+    <div class="tags">
+      <span>不打卡</span>
+      <span>公司氛围好</span>
+      <span>领导nice</span>
+    </div>
+
+    <h3>公司介绍</h3>
+    <div class="text">
+      京东于2004年正式涉足电商领域。2016年，京东集团市场交易额达到9392亿元*。京东是中国收入规模最大的互联网企业。2017年7月，京东再次入榜《财富》全球500强，位列第261位，成为排名最高的中国互联网企业，在全球仅次于亚马逊和Alphabet，位列互联网企业第三。2018年财富世界500强
+    </div>
+
+    <h3>工商信息</h3>
+    <div class="text">
+      北京京东世纪贸易有限公司
+      <table>
+        <tr>
+          <td>法人代表：</td>
+          <td>刘强东</td>
+          <td>注册资本</td>
+          <td>139798.5564万美元</td>
+          <td>成立时间</td>
+          <td>2007.04-20</td>
+          <td>经营状态</td>
+          <td>开业</td>
+        </tr>
+      </table>
+      <div><small>数据来源：企查查</small></div>
+    </div>
+
+    <h3>工作地址</h3>
+    <div class="map">
+
+    </div>
+
+    <div class="company-info flex">
+      <img src="./images/company-logo.jpg" alt="">
+      <div class="">
+        <div class="name">
+          <span>京东集团</span>
+          <div class="btn" type="button">关注该公司</div>
+        </div>
+        <div>北京京东世纪贸易有限公司</div>
+        <div class="tags">
+          电子商务 <i></i>
+          已上市 <i></i>
+          10000人以上
+        </div>
+      </div>
+    </div>
+
+    <div class="related-jobs">
+      <h3>相似职位</h3>
+      <li>
+        <a href="" class="job-item flex">
+          <img src="./images/company-logo.jpg" alt="">
+          <div class="text">
+            <div class="title flex">
+              web前端
+              <span class="salary">11-17K·13薪</span>
+            </div>
+            <div class="flex">
+                <div class="company">
+                    京东集团
+                  </div>
+                <button type="button">立即沟通</button>  
+            </div>
+          </div>
+        </a>
+      </li>
+    </div>
+  </div>
+
+  <div class="related-companies">
+    <h3>推荐公司：</h3>
+    <div class="tags">
+      <a href="">文思海辉·金融</a>
+      <a href="">健客网</a>
+      <a href="">VIPKID</a>
+      <a href="">滴滴</a>
+    </div>
+  </div>
+
+  <div class="job-footer breadcrumb-nav">
+    <a href="">首页</a> <i></i>
+    <a href="">北京Web前端招聘</a> <i></i>
+    <a href="">北京Web</a> <i></i>
+    <a href="">Web前端</a> <i></i>
+  </div>
+</body>
+
+</html>
+```
+

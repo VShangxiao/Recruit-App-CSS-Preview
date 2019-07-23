@@ -362,3 +362,236 @@ list.html
 </html>
 ```
 
+# 04-list页搭建框架(header完成)
+
+list.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【北京web前端招聘】2019年北京web前端最新人才招聘信息-BOSS直聘</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="list-header flex">
+      <img src="./images/icon-home.png" alt="">
+      <form action="" class="flex">
+        <div class="inner flex">
+          <input type="text" value="web前端">
+          <span>&times;</span>
+        </div>
+        <button>搜索</button>
+      </form>
+    </div>
+
+    <div class="filter flex">
+      <dl class="active">
+        <dt>经验</dt>
+        <dd>
+          <li class="active">不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>经验</dt>
+        <dd>
+          <li>不限</li>
+          <li>应届生</li>
+          <li>一年以内</li>
+          <li>1-3年</li>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <ul class="job-list">
+    <li>
+      <a href="" class="flex">
+        <img src="./images/company-logo.jpg" alt="">
+        <div class="text">
+          <div class="title">
+            web前端
+            <span class="salary">11-17K·13薪</span>
+          </div>
+          <div class="company">
+            京东集团
+          </div>
+          <div class="props">
+            <span>北京</span>
+            <span>1-3年</span>
+            <span>本科</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+</body>
+</html>
+```
+
+main.css
+
+```
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+  color: #7e8793;
+  -webkit-font-smoothing: antialiased;
+}
+
+.home-header {
+  background: url('../images/home-bg.png') no-repeat;
+  background-size: 100%, auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.home-header > img {
+  width: 67%;
+  margin: 2.3rem;
+}
+
+.home-header form {
+  background: white;
+  width: 92%;
+  margin: 0 auto;
+  line-height: 2.2rem;
+  border-radius: 2.2rem;
+}
+
+.home-header form input {
+  width: 75%;
+  border: none;
+  color: #aeaeae;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.home-header form button {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  border: none;
+  background-color: #fff;
+}
+
+.home-categories {
+  padding: 0 1rem;
+}
+
+.home-categories dt {
+  display: flex;
+  align-items: center;
+  color: #525252;
+}
+
+.home-categories dt img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.home-categories dd {
+  margin: 0;
+  margin: 0 -0.4rem;
+}
+
+.home-categories dd .tag {
+  background: #f5f8f9;
+  color: #7e8793;
+  font-size: 13px;
+  padding: 0.3rem 1rem;
+  margin: 0 8px 8px 0;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.home-footer {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.home-footer p {
+  margin: 0.2rem 0;
+}
+
+/* list-page */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header {
+  padding: 0.8rem 1rem; 
+}
+
+.list-header img {
+  height: 1.2rem;
+}
+
+
+.list-header form {
+  width: 100%;
+}
+
+.list-header form .inner {
+  width: 100%;
+  background: #f5f8f9;
+  margin: 0 1rem;
+  line-height: 1.7rem;
+  border-radius: 15px;
+  padding: 0 1rem;
+}
+
+.list-header form .inner input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #8b96a6;
+}
+
+.list-header form button {
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #7e8793;
+  flex-shrink: 0;
+}
+```
+

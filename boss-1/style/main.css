@@ -124,4 +124,5 @@ body {
   font-size: 0.9rem;
   color: #7e8793;
   flex-shrink: 0;
+  padding: 0;
 }

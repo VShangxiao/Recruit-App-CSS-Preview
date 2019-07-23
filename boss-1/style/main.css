@@ -5,6 +5,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.padded {
+  padding: 1rem;
+}
+
+.btn {
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem;
+}
+
+/* home */
 .home-header {
   background: url('../images/home-bg.png') no-repeat;
   background-size: 100%, auto;
@@ -82,11 +104,7 @@ body {
 }
 
 /* list-page */
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .list-header {
   padding: 0.8rem 1rem; 
@@ -241,4 +259,100 @@ body {
 
 .job-item .props span {
   margin-right: 0.5rem; 
+}
+
+/* detail */
+.top-bar img {
+  height: 1.1rem;
+}
+
+.top-bar form {
+  width: 40%;
+  border: 1px solid #5bd4c7;
+  border-radius: 2rem;
+  padding: 0 0.5rem;
+}
+
+.top-bar form input {
+  border: none;
+  width: 80%;
+  background: none;
+  line-height: 1.5rem;
+  color: #c0c4cf;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.top-bar form button {
+  border: none;
+  background: url('../images/icons.png') no-repeat center;
+  background-size: 100% auto;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.job-info {
+  background: #62d5c8;
+  color: #fff;
+}
+
+.job-title {
+  font-size: 1.2rem;
+}
+
+.job-info .props {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.job-info .props .items i {
+  display: inline-block;
+  width: 1px;
+  height: 0.8rem;
+  background: #fff;
+  margin: 0 0.5rem;
+}
+
+.job-info .tags sapn {
+  border: 1px solid #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+}
+
+.user-info {
+  background: #eefbf9;
+}
+
+.user-info > img {
+  height: 3.5rem;
+  border-radius: 3.5rem;
+}
+
+.user-info > button {
+  background: #62d5c8;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.user-info .like {
+  color: #333;
+}
+
+.user-info .name .like {
+  color: #fb7042;
+  font-size: 12px;
+}
+
+.user-info .desc {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+.user-info .info {
+  width: 40%;
+  margin: 0 1rem;
+
 }
